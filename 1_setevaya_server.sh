@@ -3,10 +3,9 @@
 # Создание сетевой папки на сервере ALD
 
 sudo mkdir /storage
-sudo mkdir /storage/0
-sudo mkdir /storage/1
-sudo mkdir /storage/2
-sudo mkdir /storage/3
+for i in {0..3} ; do
+sudo mkdir /storage/$i ;
+done
 
 sudo chmod -R 777 /storage
 
